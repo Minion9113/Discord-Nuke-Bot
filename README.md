@@ -1,5 +1,4 @@
-# diavolicchio 'n' Massy discord nuker
-Created by diavolicchio and massy
+# discord nuker
 Instructions:
 Edit the .py file to whatever you like, it will give you suggestions!
 Run the .py file and you are done!
@@ -12,10 +11,7 @@ the program won't work.
 
 (https://www.python.org/downloads/)
 
-
-# tutorial
-
-Video tutorial on youtube (https://youtu.be/dP6tz38KRAs) 
+ 
 
 # Errors
 If you get any error we suggest to install the discord.py library trough pip,

