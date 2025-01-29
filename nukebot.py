@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands, tasks
 import os
 import asyncio
-
+Bot_token = "" # add your bot's token betwen the ""
 prefix='!'
 n=0
 
@@ -57,4 +57,4 @@ async def spam(ctx):
              await c.send('@everyone karma!')
              await c.send('@everyone karma!')
 
-client.run('OTA0MTEwNDk3MjQ1Mjk4NzQ4.YX2whA.Kk8lX1tD3dGqrGInb_YbXYV1vZs')
+client.run(Bot_token)
