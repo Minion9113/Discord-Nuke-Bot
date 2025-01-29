@@ -1,1 +1,1 @@
-- [Ilyas](github.com/ilylbggg) - beared the ntoken for security porposes 
+- [Ilyas](github.com/ilylbggg) - beared the token for security porposes 
